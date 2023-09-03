@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP | TROJAN</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <link rel = "icon" href="images/logos.png" type="image/x-icon">
+    <style>
+          
+body{
+  margin: 0;
+}
+nav{
+  padding: 3rem;
+  font-size: larger;
+  }
+
+
+ul{
+  gap: 10px;
+}
+.navbar-brand{
+  font-family:cursive;
+  font-size: 4vh;
+  
+}
+.nav-item{
+
+font-family: monospace;
+}
+.nav-item:hover{
+  color: darkgreen;
+  text-decoration: underline;
+}
+.form-icons{
+  gap: 10px;
+}
+
+.icon{
+  gap: 50px;
+  align-content: center;
+}
+.icons{
+
+  margin-top: 10px; 
+}
+.icons:hover{
+  font-size: 1.3rem;
+  transition: .07s;
+}.newsletter{
+  padding: 50px;}
+  .email input{
+  width: 300px;
+}
+.title{
+    color:  rgb(19, 43, 19);
+    padding: 40px 40px;
+}
+.back a{
+    color:  rgb(19, 43, 19);
+    font-weight: 600;
+    font-size: large;
+}
+.back:hover{
+    text-decoration:2px underline ;
+}
+.delete{
+  cursor: pointer;
+  color: red;}
+
+/* footer */
+#footer{
+    background-color: rgb(19, 43, 19);
+    color: white;
+}
+#footer .row{
+padding: 20px;
+}
+.brands{
+    gap: 40px;
+    align-content: center;
+}
+.brands a:hover{
+    font-size: 1.4rem;
+    transition: .03s;
+    
+}
+.links{
+  font-size: .9rem;
+  font-weight: 300;
+}
+.links:hover{
+  text-decoration: underline;
+  font-weight: 400;
+}
+.credentials ul{
+font-size: .8rem;
+font-weight: 200;
+}
+.credentials ul li a:hover{
+  text-decoration: underline;
+  font-weight: 300;
+}
+.fa-plus, .fa-minus{
+  cursor: pointer;
+}
+    </style>
+</head>
+ <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+          <a class="logo" href="index.html" aria-current="page active">
+            <img src="images/logo.png" class="img-fluid" alt="" width="100" height="64">
+          </a>
+          <a class="navbar-brand text-success text-center" href="index.html" >TROJAN</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse  justify-content-evenly" id="navbarSupportedContent" >
+            <ul class="navbar-nav  mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link" href="deals_page.html">Weekly-deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bSellers.html">Bestsellers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  All
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="new.html">New Arrivals!</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Values</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          <form class="d-flex form-icons justify-content-center" >
+            <input class="form-control " type="text" placeholder="Search ">
+             <div class="btn-group d-flex icon container-fluid ">
+                <a href="#"><i class="fa-solid fa-magnifying-glass icons position-absolute text-dark"></i></a>
+                <a href="cart.html" class=" text-dark carts"><span class="position-absolute"><i class="fa-solid fa-cart-shopping icons">
+                  
+                </i><span style="font-size: 13px;font-weight: 700" class="text-success" id="count">0</span></span></a>
+                <a href="#" id="icon-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                  <i class="fa fa-user icons position-absolute text-dark" ></i></a>
+                <ul class="dropdown-menu" aria-labelledby="icon-dropdown">
+                  <li><a class="dropdown-item" href="login.html ">Account</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+             </div>
+              
+            </form>
+           
+          </div>
+        </div>
+      </nav>
+<div class="container-fluid title d-flex">
+    <h1 class="me-auto">Your shopping cart </h1>
+    <div class="back"><a href="shop.html">Continue shopping</a></div>
+</div> 
+<div class="row mb-3 " id="label">
+  <div class="col-md-6 col-4 fs-5 text-secondary px-5  border-bottom border-dark">Products</div>
+  <div class="col-md-3 col-4 fs-5 text-secondary text-start border-bottom border-dark">Quantity</div>
+  <div class="col-md-3 col-4 fs-5 text-secondary text-end px-5 border-bottom border-dark">Total</div>
+</div>
+<div class="container-fluid mb-3 overflow-auto" style="height: 500px;" id="cartItems">
+   
+    
+</div>
+<div id="total">
+
+</div>
+<!-- footer -->
+<footer class="container-fluid " id="footer">
+  <div class="row flex-start ">
+      <div class="col-xl-3 col-lg-4 col-sm-6 d-flex flex-column gap-3 pb-3">
+          <a href="index.html" style="text-decoration: none;"><h3 style="font-family: cursive; color:white;">TROJAN</h3></a>
+           <h5>To your bring Sports and Fashion events with aesthetic designs.</h5>
+           <div class="d-flex brands fs-5 mb-5">
+              <a href="#" class="text-light"><i class="fa-brands fa-facebook position-absolute"></i></a>
+              <a href="#" class="text-light"><i class="fa-brands fa-twitter position-absolute"></i></a>
+              <a href="#" class="text-light"><i class="fa-brands fa-instagram position-absolute"></i></a>
+              <a href="#" class="text-light"><i class="fa-brands fa-tiktok position-absolute"></i></a>
+              <a href="#" class="text-light"><i class="fa-brands fa-pinterest position-absolute"></i></a>
+           </div>
+          </div>
+        
+      <div class="col-xl-3 col-lg-4 col-sm-6 d-flex flex-column gap-2 mb-5">
+          <h4>Shop</h4>
+          <a href="#" class="text-light links">Weekly-deals</a>
+          <a href="#" class="text-light links">Bestsellers</a>
+          <a href="#" class="text-light links">New Arrivals</a>
+          <a href="#" class="text-light links">Values</a>
+      </div> 
+      <div class="col-xl-3 col-lg-4 col-sm-6 d-flex flex-column gap-2 mb-5">
+        <h4>Help</h4>
+        <a href="#" class="text-light links">Shipping Information</a>
+        <a href="#" class="text-light links">Size Guide</a>
+        <a href="#" class="text-light links">Refund Policy</a>
+        <a href="#" class="text-light links">FAQ</a>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-sm-6 d-flex flex-column gap-2 mb-5">
+        <h4>About Us</h4>
+        <a href="#" class="text-light links">Values</a>
+        <a href="#" class="text-light links">Contact-Us</a>
+        <a href="#" class="text-light links">Location</a>
+      </div>
+  </div>
+  <hr>
+  <div class="credentials d-flex justify-content-center">
+    <ul class="d-flex flex-wrap  gap-5">
+       <span>@ 2023, Trojan</span>
+      <li><a href="#" class="text-light text-sm-center">Refund Policy</a></li>
+      <li><a href="#" class="text-light text-sm-center">Privacy Policy</a></li>
+      <li><a href="#" class="text-light text-sm-center">Terms of Service</a></li>
+      <li><a href="#" class="text-light text-sm-center">Shipping Policy</a></li>
+      <li><a href="#" class="text-light text-sm-center">Contact Information</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+ </body>
